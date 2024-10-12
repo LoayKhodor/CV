@@ -1,0 +1,95 @@
+$primary:       #8967B3;
+$secondary:     #E6D9A2;
+$success:       #624E88;
+$info:          #CB80AB;
+// $warning:       $yellow;
+// $danger:        $red;
+// $light:         $gray-100;
+// $dark:          $gray-900;
+// // Then import Bootstrap
+.card .card-body{
+    font-weight: bold;
+}
+.card{
+    background-color: black!important;
+    align-items: center;
+    justify-self: center;
+}
+.card>img{
+    // width: 80px;
+    height: 100px;
+}
+.row{
+    justify-content: center;
+    align-items: center;
+}
+.hero-section{
+    justify-content: start;
+    align-items: start;
+}
+.container.container-skills{
+    max-width: 976px;
+}
+.card.skill-card{
+    max-width: 200px;
+}
+.skill-text{
+    color: #CB80AB;
+    font-weight: bold;
+    text-align: center;
+}
+.experience-container code{
+    color: #624E88;
+}
+code{
+    color: #624E88!important;
+}
+.skill-img {
+    padding-top: 20px;
+}
+.card-text{
+    text-align: center;
+}
+.skill-card:hover{
+    background-color:#624E88!important;
+    animation: pulse 2s infinite;
+
+}
+.card:hover p {
+    color: white
+}
+.card-cover{
+    background-size:cover; 
+    background-blend-mode: overlay;
+}
+.card-cover:hover {
+    background-color: white!important;
+    background-blend-mode: multiply;
+	animation: pulse 2s infinite;
+}
+.card-cover:hover .card-texts{
+    color: black!important;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+
+// Animations
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+  
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
